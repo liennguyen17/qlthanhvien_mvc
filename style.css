@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* .list{
+
+} */
+
+.dangkythanhvien{
+    width: 500px;
+    border: 1px solid #dddddd;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.dangkythanhvien h3{
+    background: rgb(77, 159, 117);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.dangkythanhvien form{
+    margin: 20px;
+    width: 100%;
+}
+
+.dangkythanhvien form table tr{
+    font-size: 20px;
+}
+
+.dangkythanhvien form table tr td{
+    padding: 10px;
+}
+
+.dangkythanhvien form table tr td input{
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 8px;
+    border: 0.5px solid #595858;
+    font-size: 15px;
+}
+
+.dangkythanhvien form table tr td input[type=submit]{
+    width: 80px;
+    background-color: rgb(93, 200, 164);
+    font-size: 17px;
+    color: #fff;
+    border: 0;
+    font-weight: 800;
+}
+
+.dangkythanhvien form table tr td input[type=submit]:hover{
+    background-color: rgb(69, 181, 144);
+    
+}
+
