@@ -5,10 +5,6 @@
     
 }
 
-/* .list{
-
-} */
-
 .dangkythanhvien{
     width: 500px;
     border: 1px solid #dddddd;
@@ -36,7 +32,7 @@
 }
 
 .dangkythanhvien form table tr td{
-    padding: 10px;
+    padding: 15px;
 }
 
 .dangkythanhvien form table tr td input{
@@ -45,10 +41,11 @@
     border-radius: 8px;
     border: 0.5px solid #595858;
     font-size: 15px;
-}
+    }
 
 .dangkythanhvien form table tr td input[type=submit]{
-    width: 80px;
+    width: 100px;
+    padding: 5px;
     background-color: rgb(93, 200, 164);
     font-size: 17px;
     color: #fff;
@@ -61,3 +58,33 @@
     
 }
 
+
+
+.list{
+    width: 150px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: rgb(82, 173, 143) ;
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.list:hover{
+    background-color: rgb(63, 146, 118);
+}
+
+/* danh sach */
+.danhsach{
+    width: 65%;
+    margin: auto;
+}
+
+.danhsach h2{
+    text-align: center;
+    font-weight: 700;
+}

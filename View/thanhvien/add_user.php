@@ -14,7 +14,7 @@
             <table>
                 <tr>
                     <td>Tên thành viên : </td>
-                    <td><input type="text" name="hote" placeholder="Tên thành viên"></td>
+                    <td><input type="text" name="hoten" placeholder="Tên thành viên"></td>
                 </tr>
                 <tr>
                     <td>Năm sinh :</td>
@@ -26,11 +26,17 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><input type="submit" name="add_user" placeholder="Thêm"></td>
+                    <td><input type="submit" name="add_user" value="Thêm"></td>
                 </tr>
             </table>
+            
         </form>
-        <a href="" class="list">Danh sách</a>
+        <?php
+            if(isset($thanhcong) && in_array('add_success', $thanhcong)){
+                echo "<p style='color: rgb(64, 179, 141); font-size: 25px ; text-align:center; font-weight: 700; margin-bottom: 20px;'>Thêm thành công</p>";
+            }
+        ?>
+        <a href="index.php?controller=thanhvien&action=list" class="list"> Xem danh sách &#x2192;</a>
         </div>
     </div>
 </body>

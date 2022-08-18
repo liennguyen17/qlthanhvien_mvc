@@ -41,9 +41,11 @@
         }
 
         //lay toan bo du lieu
-        public function getAllData()
+        public function getAllData($table)
         {
-            if(!$this->result){
+            $sql = "SELECT * FROM $table";
+            $this->execute($sql);
+            if($this->num_rows()==0){
                 $data = 0;
             }
             else{
@@ -52,6 +54,18 @@
                 }
             }
             return $data;
+        }
+
+        //dem so ban ghi
+        public function num_rows()
+        {
+            if($this->result){
+                $num = mysqli_num_rows($this->result);
+            }
+            else{
+                $num = 0;
+            }
+            return $num;
         }
 
         //them du lieu
