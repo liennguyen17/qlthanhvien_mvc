@@ -34,7 +34,7 @@
       <td><?php echo $value['quequan'] ?></td>
       <td>
         <a class="me-2" href="index.php?controller=thanhvien&action=edit&id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-outline-primary">Chỉnh sửa</button></a>
-        <a href=""><button type="button" class="btn btn-outline-danger">xóa</button></a>
+        <a onclick="return confirm('Bạn có chắc chắn muốn xóa không ?')" href="index.php?controller=thanhvien&action=delete&id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-outline-danger">Xóa</button></a>
       </td>
     </tr>
     <?php

@@ -52,6 +52,17 @@
         }
 
         case 'delete':{
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $tblTable = "thanhvien";
+
+                if($db->Delete($id, $tblTable)){
+                    header('location:index.php?controller=thanhvien&action=list');
+                }
+                else{
+                    header('location:index.php?controller=thanhvien&action=list');
+                }
+            }
             require_once('View/thanhvien/delete_user.php');
             break;
         }

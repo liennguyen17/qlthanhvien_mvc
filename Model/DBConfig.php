@@ -97,9 +97,9 @@
         }
 
         //xoa du lieu
-        public function Delete($id)
+        public function Delete($id, $table)
         {
-            $sql = "DELETE FROM thanhvien WHERE id='$id'";
+            $sql = "DELETE FROM $table WHERE id='$id'";
             return $this->execute($sql);
         }
 
