@@ -33,7 +33,7 @@
       <td><?php echo $value['namsinh'] ?></td>
       <td><?php echo $value['quequan'] ?></td>
       <td>
-        <a class="me-2" href=""><button type="button" class="btn btn-outline-primary">Chỉnh sửa</button></a>
+        <a class="me-2" href="index.php?controller=thanhvien&action=edit&id=<?php echo $value['id']; ?>"><button type="button" class="btn btn-outline-primary">Chỉnh sửa</button></a>
         <a href=""><button type="button" class="btn btn-outline-danger">xóa</button></a>
       </td>
     </tr>

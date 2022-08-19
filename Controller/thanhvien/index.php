@@ -27,6 +27,26 @@
         }
 
         case 'edit':{
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                $tblTable = "thanhvien";
+                $dataID = $db->getDataID($tblTable, $id);
+
+                if(isset($_POST['update_user'])){
+
+                    //lay du lieu tu view
+                    $hoten = $_POST['hoten'];
+                    $namsinh = $_POST['namsinh'];
+                    $quequan = $_POST['quequan'];
+
+                    //truyen du lieu tu view sang model
+                    if($db->UpdateData($id, $hoten, $namsinh, $quequan)){
+                        header('location:index.php?controller=thanhvien&action=list');
+                    }
+
+                }
+
+            }
             require_once('View/thanhvien/edit_user.php');
             break;
         }

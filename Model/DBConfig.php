@@ -56,6 +56,20 @@
             return $data;
         }
 
+        //lay du lieu can sua theo id
+        public function getDataID($table, $id)
+        {
+            $sql = "SELECT * FROM $table WHERE id = '$id'";
+            $this->execute($sql);
+            if($this->num_rows()!=0){
+                $data = mysqli_fetch_array($this->result);
+            }
+            else{
+                $data = 0;
+            }
+            return $data;
+        }
+
         //dem so ban ghi
         public function num_rows()
         {
