@@ -103,5 +103,21 @@
             return $this->execute($sql);
         }
 
+        //tim kiem 
+        public function SearchData($table, $key)
+        {
+            $sql = "SELECT * FROM $table WHERE hoten REGEXP '$key' ORDER BY id ASC";
+            $this->execute($sql);
+            if($this->num_rows()==0){
+                $data = 0;
+            }
+            else{
+                while($datas = $this->getData()){
+                    $data[] = $datas;
+                }
+            }
+            return $data;
+        }
+
     }
 ?>

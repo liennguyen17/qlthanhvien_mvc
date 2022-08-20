@@ -74,6 +74,17 @@
             break;
         }
 
+        case 'timkiem':{
+            if(isset($_GET['tukhoa'])){
+                $key = $_GET['tukhoa'];
+                $tblTable = "thanhvien";
+
+                $data_Search = $db->SearchData($tblTable, $key);
+            }
+            require_once('View/thanhvien/search_user.php');
+            break;
+        }
+
         default:{
             require_once('View/thanhvien/list.php');
             break;

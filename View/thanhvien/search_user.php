@@ -26,7 +26,7 @@
         <h2>Danh sách thành viên</h2>
     <table class="table table-hover mt-3 ">
   <thead>
-    <tr class="table-primary">
+    <tr class="table-info">
       <th scope="col">STT</th>
       <th scope="col">Tên thành viên</th>
       <th scope="col">Năm sinh</th>
@@ -37,7 +37,7 @@
   <tbody>
     <?php
         $stt = 1;
-            foreach($data as $value){
+            foreach($data_Search as $value){
     ?>
     <tr>
       <th scope="row"><?php echo $stt; ?></th>
